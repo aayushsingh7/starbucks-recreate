@@ -1,0 +1,232 @@
+[
+    {
+        "id": "12039485694302",
+        "name": "Tomato & Mozzarella on Focacciavv",
+        "image": "https://globalassets.starbucks.com/digitalassets/products/food/SBX20220207_TomatoMozzarellaFocacciaPanini.jpg?impolicy=1by1_medium_630",
+        "price": "447",
+        "description": "Roasted tomatoes, mozzarella, spinach and basil pesto layered on toasted focaccia bread. [ VEGETARIAN, HIGH-PROTEIN ]",
+        "food_details": [
+            {
+                "Calories": 360
+            },
+            {
+                "Fat": 12
+            },
+            {
+                "Suger": 2
+            },
+            {
+                "Type": "Vergitarian"
+            }
+        ],
+        "category": "Best Sellers",
+        "product_type": "Lunch"
+    },
+    {
+        "id": "12039485694302",
+        "name": "Mocha Cookie Crumble Frappuccino®",
+        "image": "https://globalassets.starbucks.com/digitalassets/products/bev/SBX20211210_MochaCookieCrumbleFrapp.jpg?impolicy=1by1_wide_topcrop_630",
+        "price": "670",
+        "description": "Frappuccino® Roast coffee, mocha sauce and Frappuccino® chips blended with milk and ice, layered on top of whipped cream and chocolate cookie crumble and topped with vanilla whipped cream, mocha drizzle and even more chocolate cookie crumble. Each sip is as good as the last . . . all the way to the end.",
+        "food_details": [
+            {
+                "Calories": 480
+            },
+            {
+                "Fat": 55
+            },
+            {
+                "Suger": 34
+            },
+            {
+                "Type": "Vergitarian"
+            }
+        ],
+        "category": "Best Sellers",
+        "product_type": "Frappuccino® Blended Beverages"
+    },
+    {
+        "id": "12039485694302",
+        "name": "Bacon, Sausage & Egg Wrap",
+        "image": "https://globalassets.starbucks.com/digitalassets/products/food/SBX20191018_BaconSausageCageFreeEggWrap.jpg?impolicy=1by1_medium_630",
+        "price": "478",
+        "description": "Double-smoked bacon, savory pork sausage and cage-free scrambled eggs combined with Cheddar cheese and potatoes—all wrapped in a flour tortilla.",
+        "food_details": [
+            {
+                "Calories": 640
+            },
+            {
+                "Fat": 33
+            },
+            {
+                "Suger": 2
+            },
+            {
+                "Type": "Non-Vergitarian"
+            }
+        ],
+        "category": "Best Sellers",
+        "product_type": "Breakast"
+    },
+    {
+        "id": "12039485694302",
+        "name": "Caramel Ribbon Crunch Frappuccino®",
+        "image": "https://globalassets.starbucks.com/digitalassets/products/bev/SBX20211210_CaramelRibbonCrunchFrapp.jpg?impolicy=1by1_wide_topcrop_630",
+        "price": "558",
+        "description": "Buttery caramel syrup blended with coffee, milk and ice, then topped with a layer of dark caramel sauce, whipped cream, caramel drizzle and a crunchy caramel-sugar topping—oh-so-beautifully delicious.",
+        "food_details": [
+            {
+                "Calories": 470
+            },
+            {
+                "Fat": 22
+            },
+            {
+                "Suger": 60
+            },
+            {
+                "Type": "Vergitarian"
+            }
+        ],
+        "category": "Best Sellers",
+        "product_type": "Frappuccino® Blended Beverages"
+    },
+    {
+        "id": "12039485694302",
+        "name": "Double Chocolate Brownie",
+        "image": "https://globalassets.starbucks.com/digitalassets/products/food/SBX20190715_DoubleChocolateChunkBrownie.jpg?impolicy=1by1_medium_630",
+        "price": "560",
+        "description": "Rich chocolate brownie with generous chunks of semisweet chocolate.",
+        "food_details": [
+            {
+                "Calories": 480
+            },
+            {
+                "Fat": 28
+            },
+            {
+                "Suger": 37
+            },
+            {
+                "Type": "Vergitarian"
+            }
+        ],
+        "category": "Best Sellers",
+        "product_type": "Bakery"
+    },
+    {
+        "id": "12039485694302",
+        "name": "Crispy Grilled Cheese on Sourdough",
+        "image": "https://globalassets.starbucks.com/digitalassets/products/food/SBX20220207_GrilledCheeseOnSourdough_US.jpg?impolicy=1by1_medium_630",
+        "price": "570",
+        "description": "A blend of white Cheddar and mozzarella cheeses on sourdough bread, topped with a Parmesan butter spread.",
+        "food_details": [
+            {
+                "Calories": 520
+            },
+            {
+                "Fat": 27
+            },
+            {
+                "Suger": 1
+            },
+            {
+                "Type": "Vergitarian"
+            }
+        ],
+        "category": "Best Sellers",
+        "product_type": "Lunch"
+    },
+    {
+        "id": "12039485694302",
+        "name": "Double-Smoked Bacon, Cheddar & Egg Sandwich",
+        "image": "https://globalassets.starbucks.com/digitalassets/products/food/SBX20210915_BaconCheddarEggSandwich.jpg?impolicy=1by1_medium_630",
+        "price": "880",
+        "description": "Bacon smoked for six hours over hickory wood chips, stacked with a cage-free fried egg, topped with a melted slice of sharp Cheddar cheese—all on our signature croissant bun. -HIGH-PROTEIN",
+        "food_details": [
+            {
+                "Calories": 500
+            },
+            {
+                "Fat": 27
+            },
+            {
+                "Suger": 8
+            },
+            {
+                "Type": "Non-Vergitarian"
+            }
+        ],
+        "category": "Best Sellers",
+        "product_type": "Breakast"
+    },
+    {
+        "id": "12039485694302",
+        "name": "Butter Croissant",
+        "image": "https://globalassets.starbucks.com/digitalassets/products/food/SBX20210915_Croissant-onGreen.jpg?impolicy=1by1_medium_630",
+        "price": "330",
+        "description": "Classic butter croissant with soft, flaky layers and a golden-brown crust",
+        "food_details": [
+            {
+                "Calories": 250
+            },
+            {
+                "Fat": 14
+            },
+            {
+                "Suger": 4
+            },
+            {
+                "Type": "Vergitarian"
+            }
+        ],
+        "category": "Best Sellers",
+        "product_type": "Bakery"
+    },
+    {
+        "id": "12039485694302",
+        "name": "Melon Burst Iced Energy",
+        "image": "https://globalassets.starbucks.com/digitalassets/products/bev/MelonBurstEnergyDrink.jpg?impolicy=1by1_wide_topcrop_630",
+        "price": "880",
+        "description": "VENTI ONLY. A sparkling boost of sugar-free energy, chilled to perfection. Refreshing flavors of melon and cucumber balanced with bright Passion Tango® tea, served over ice. The ultimate afternoon jump start. 180 mg caffeine.",
+        "food_details": [
+            {
+                "Calories": 10
+            },
+            {
+                "Fat": 0
+            },
+            {
+                "Suger": 0
+            },
+            {
+                "Type": "Vergitarian"
+            }
+        ],
+        "category": "Best Sellers",
+        "product_type": "Iced Energy"
+    },
+    {
+        "id": "12039485694302",
+        "name": "Iced Chai Latte",
+        "image": "https://globalassets.starbucks.com/digitalassets/products/bev/SBX20220810_IcedChaiTeaLatte.jpg?impolicy=1by1_wide_topcrop_630",
+        "price": "770",
+        "description": "Black tea, infused with cinnamon, clove and other warming spices, is combined with milk and ice for the perfect balance of sweet and spicy.",
+        "food_details": [
+            {
+                "Calories": 240
+            },
+            {
+                "Fat": 4
+            },
+            {
+                "Suger": 42
+            },
+            {
+                "Type": "Vergitarian"
+            }
+        ],
+        "category": "Best Sellers",
+        "product_type": "Iced Tea and Lemonade"
+    }
+]

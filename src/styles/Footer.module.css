@@ -1,0 +1,137 @@
+.footer {
+  width: 100%;
+  padding: 60px 40px 0px 40px;
+  background: var(--secondary-background);
+}
+
+.footer_details {
+  display: flex;
+  width: 100%;
+  padding-bottom: 30px;
+}
+
+.section_1 {
+  width: 40%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  font-family: "Roboto", sans-serif;
+}
+
+.section_2 {
+  width: 60%;
+  display: flex;
+  padding: 0px 30px;
+}
+
+.section_2 .options {
+  width: 33.333%;
+  padding: 0px 20px;
+}
+
+.section_2 .options h5 {
+  font-size: 0.8rem;
+  color: var(--primary-color);
+  margin-bottom: 30px;
+  font-family: "Roboto", sans-serif;
+}
+
+.section_2 ul {
+  width: 100%;
+}
+
+.section_2 ul li {
+  list-style: none;
+  margin: 10px 0px;
+}
+
+.section_2 ul li a {
+  text-decoration: none;
+  color: #cbcbcb;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.65rem;
+}
+
+.section_2 ul li a:hover {
+  text-decoration: underline;
+}
+
+.company_logo {
+  display: flex;
+  align-items: center;
+  color: var(--primary-color);
+}
+
+.company_logo svg {
+  font-size: 60px;
+}
+
+.company_logo h5 {
+  font-size: 2rem;
+  margin-left: 20px;
+}
+
+.description {
+  font-size: 0.65rem;
+  color: #cbcbcb;
+  margin-top: 20px;
+  width: 90%;
+  line-height: 1.1rem;
+}
+
+.subscribe_div {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.subscribe_div input {
+  background: var(--primary-color);
+  color: var(--primary-background);
+  padding: 15px;
+  width: 90%;
+  font-size: 17px;
+}
+
+.subscribe_div button {
+  background: var(--highlight-color);
+  padding: 15px;
+  font-size: 17px;
+  color: var(--primary-color);
+  font-family: "Roboto", sans-serif;
+}
+
+.icons {
+  display: flex;
+  align-items: flex-start;
+  color: var(--primary-color);
+  margin-top: 30px;
+  flex-direction: column;
+}
+
+.icons svg {
+  background: var(--highlight-color);
+  padding: 10px;
+  border-radius: 10%;
+  font-size: 50px;
+  margin-right: 10px;
+
+}
+
+.icons h5 {
+  font-size: 0.65rem;
+  color: var(--primary-color);
+  margin-bottom: 15px;
+  font-family: "Roboto", sans-serif;
+}
+
+.copyright {
+  width: 100%;
+  text-align: center;
+  color: var(--primary-color);
+  font-size: 0.8rem;
+  font-family: "Roboto", sans-serif;
+  padding: 40px;
+  border-top: 2px solid #005337;
+}
