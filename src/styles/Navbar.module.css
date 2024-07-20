@@ -3,7 +3,17 @@
   height: 70px;
   display: flex;
   align-items: center;
-  padding: 40px;
+  padding: 20px 40px;
+  position: relative;
+  z-index: 99;
+  background: var(--primary-background);
+}
+
+.header {
+  width: 100%;
+  height: auto;
+  position: relative;
+  z-index: 100;
 }
 
 .navbar_main_container img {
@@ -19,12 +29,11 @@
 }
 
 .navbar_content_container a {
-  font-family: "Bebas Neue", sans-serif;
-  /* font-weight: 200; */
-  letter-spacing: 2px;
-  font-size: 0.9rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  font-size: 0.8rem;
   text-decoration: none;
-  color: var(--secondary-color);
+  color: var(--primary-color);
   cursor: pointer !important;
 }
 
@@ -42,9 +51,9 @@
 
 .user_items button {
   padding: 10px 15px;
-  font-family: "Bebas Neue", sans-serif;
-  letter-spacing: 2px;
-  font-size: 0.9rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  font-size: 0.8rem;
   color: var(--primary-color);
   width: 150px;
   cursor: pointer !important;
@@ -56,4 +65,77 @@
 
 .signIn {
   background: var(--secondary-background);
+}
+
+.mob_links {
+  display: none;
+  width: 100%;
+  position: absolute;
+  flex-direction: column;
+  background: var(--primary-background);
+  padding-top: 10px;
+  top: -1000%;
+  transition: 0.5s ease-in-out;
+  z-index: 90;
+}
+
+.show {
+  top: 100%;
+}
+
+.mob_links li svg {
+  font-size: 22px;
+  margin-right: 15px;
+}
+
+.mob_links li {
+  list-style: none;
+}
+
+.mob_links li a {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  text-decoration: none;
+  padding: 15px 20px;
+  border-bottom: 2px solid var(--secondary-background);
+  color: var(--primary-color);
+  font-size: 0.8rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+}
+
+.mob_links li a:hover {
+  background: var(--secondary-background);
+}
+
+.mob_options {
+  display: none;
+  color: var(--primary-color);
+  font-size: 30px;
+  gap: 20px;
+}
+
+@media (max-width: 1150px) {
+  .navbar_content_container a,
+  .user_items button {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 1000px) {
+  .branding_items,
+  .user_items {
+    display: none;
+  }
+  .mob_links,
+  .mob_options {
+    display: flex;
+  }
+  .navbar_main_container {
+    padding: 20px;
+  }
+  .mob_links li a {
+    font-size: 0.95rem;
+  }
 }

@@ -82,6 +82,7 @@ const FramerMotion = ({
             }}
         >
             <motion.div
+                className={className }
                 variants={variants}
                 initial="hidden"
                 animate={mainControls}

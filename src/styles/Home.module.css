@@ -28,6 +28,7 @@
   line-height: 6rem;
   color: var(--primary-color);
   margin-bottom: 200px;
+  text-align: center;
 }
 
 .hero_section h1 .main {
@@ -144,9 +145,11 @@
 .best_sellers {
   width: 100%;
   padding: 40px;
+  margin-bottom: 80px !important;
   display: flex;
   flex-direction: column;
   position: relative;
+  max-height: 1400px;
 }
 
 .shadow {
@@ -477,8 +480,13 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   position: relative;
+  max-height: 1500px !important;
+}
+
+.features_mob figure figcaption h4 span {
+  padding: 10px;
 }
 
 .faqs {
@@ -599,4 +607,280 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.features_mob {
+  display: none;
+  flex-direction: column;
+  width: 100%;
+  padding: 40px;
+  margin-top: 20px;
+  max-height: 2000px !important;
+}
+
+.features_mob figure {
+  width: 100%;
+  display: flex;
+  margin-bottom: 30px;
+  padding: 15px;
+  background: var(--secondary-background-lighter);
+  border-radius: 10px;
+}
+
+.reverse {
+  flex-direction: row-reverse;
+}
+
+.normal {
+  flex-direction: row;
+}
+
+.features_mob figure figcaption {
+  width: 100%;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  padding: 0px 20px;
+}
+
+.features_mob figure figcaption h4 {
+  font-size: 3rem;
+  color: var(--primary-color);
+  font-family: "Bebas Neue", sans-serif;
+  letter-spacing: 2px;
+  font-weight: 400;
+  padding: 10px;
+}
+
+.features_mob figure figcaption h4 svg {
+  background: var(--highlight-color);
+  padding: 5px;
+  border-radius: 10px;
+  margin-bottom: -10px;
+}
+
+.features_mob figure figcaption h4 .arrow {
+  border-radius: 50%;
+}
+
+.features_mob figure .mob_image {
+  width: 40vw;
+  height: 40vw;
+  flex-shrink: 0;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.features_mob figure .mob_image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 1350px) {
+  .product_details {
+    position: relative;
+    left: 0%;
+    transform: translate(0%);
+    width: 100%;
+    margin-top: 15px;
+  }
+  .product_details button {
+    font-size: 1.5rem;
+    padding: 15px 20px;
+  }
+}
+
+@media (max-width: 1150px) {
+  .image_bg {
+    bottom: -5%;
+  }
+}
+
+@media (max-width: 970px) {
+  .product_con h3 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 850px) {
+  .image_bg {
+    bottom: -20%;
+  }
+  .image_bg .img_1 {
+    width: 150%;
+  }
+
+  .image_bg .img_2 {
+    width: 170%;
+  }
+
+  .image_bg .img_3 {
+    rotate: 0.5deg;
+    width: 220%;
+  }
+
+  .image_bg .img_4 {
+    width: 170%;
+  }
+
+  .image_bg .img_5 {
+    width: 150%;
+  }
+
+  .image_con {
+    padding: 0px 0px 30px 30px;
+  }
+  .features {
+    display: none;
+  }
+  .features_mob {
+    display: flex;
+  }
+}
+
+@media (max-width: 720px) {
+  .best_seller_con {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .image_con {
+    width: 70%;
+  }
+  .product_con {
+    width: 100%;
+  }
+  .product_box .product_image {
+    height: 240px;
+  }
+  .products_section {
+    padding: 40px 20px;
+  }
+  .frame_img {
+    width: 100%;
+    height: 300px;
+  }
+  .about_frame .content h4 {
+    font-size: 4rem;
+    line-height: 4rem;
+  }
+}
+
+@media (max-width: 650px) {
+  .hero_section h1 {
+    font-size: 4rem;
+    line-height: 4.2rem;
+  }
+  .hero_section h1 .main {
+    font-size: 5rem;
+  }
+  .hero_section {
+    padding: 30px;
+  }
+  .best_sellers h2,
+  .products_section h2,
+  .community h2,
+  .faq_container h2 {
+    font-size: 3rem !important;
+  }
+  .best_sellers {
+    padding: 20px !important;
+  }
+  .image_con {
+    width: 100%;
+    padding: 0px;
+    margin-bottom: 20px;
+  }
+  .products_section {
+    border-radius: 20px;
+  }
+}
+
+@media (max-width: 610px) {
+  .hero_section {
+    overflow: hidden;
+  }
+  .features_mob figure {
+    flex-direction: column-reverse;
+  }
+  .features_mob figure .mob_image {
+    width: 100%;
+    height: 250px;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-bottom: 20px;
+  }
+  .features_mob {
+    padding: 20px;
+  }
+  .about_frame {
+    width: 100%;
+  }
+  .features_mob figure figcaption h4 {
+    font-size: 2rem;
+  }
+  .features_mob figure figcaption {
+    padding: 0px;
+  }
+  .faqs {
+    width: 100%;
+  }
+  .faq_container {
+    padding: 20px;
+  }
+
+  .image_bg {
+    bottom: -30%;
+  }
+  .image_bg .img_1 {
+    width: 200%;
+    margin-left: -100px;
+  }
+
+  .image_bg .img_2 {
+    width: 220%;
+  }
+
+  .image_bg .img_3 {
+    rotate: 0.5deg;
+    width: 350%;
+  }
+
+  .image_bg .img_4 {
+    width: 220%;
+  }
+
+  .image_bg .img_5 {
+    width: 200%;
+    margin-left: 100px;
+  }
+
+  .image_div div h6 {
+    font-size: 2rem;
+  }
+
+  .image_div div p {
+    font-size: 0.8rem;
+    line-height: 1.1rem;
+    width: 90%;
+  }
+
+  .image_div button {
+    margin-top: 40px;
+  }
+
+  .about_coffee {
+    height: 500px;
+    padding: 20px;
+  }
+}
+
+@media (max-width: 460px) {
+  .hero_section h1 {
+    align-items: start;
+    text-align: start;
+  }
+  .features_mob figure figcaption h4 svg {
+    margin-bottom: -5px;
+  }
 }

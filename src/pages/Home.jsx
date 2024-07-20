@@ -23,6 +23,8 @@ import Slider from '../layout/Slider';
 
 const Home = () => {
 
+    const reversedArr = [...productsData]?.reverse()
+    console.log(reversedArr)
     const scrollRef = useRef(null);
     const bestSellerRef = useRef(null)
     const productsSectionRef = useRef(null)
@@ -100,7 +102,7 @@ const Home = () => {
             ScrollTrigger.create({
                 trigger: productsSectionRef.current,
                 start: 'top top',
-                end: 'center 20%',
+                end: 'center 80%',
                 markers: true,
                 scrub: true,
                 animation: animation1,
@@ -109,7 +111,7 @@ const Home = () => {
             ScrollTrigger.create({
                 trigger: productsSectionRef.current,
                 start: 'top top',
-                end: 'bottom bottom',
+                end: 'center 0%',
                 markers: true,
                 scrub: true,
                 animation: animation2,
@@ -161,6 +163,10 @@ const Home = () => {
     }, [])
 
 
+
+
+
+
     return (
         <div className={styles.container} ref={scrollRef} data-scroll-container>
             <section className={styles.hero_section} onMouseDown={(e) => e.preventDefault()} data-scroll >
@@ -193,14 +199,14 @@ const Home = () => {
                     </div> */}
 
 
-                <span className={styles.indicator_arrow} data-scroll data-scroll-speed="-0.2"><IoIosArrowRoundDown /></span>
+                <span className={styles.indicator_arrow} data-scroll data-scroll-speed="-0.1"><IoIosArrowRoundDown /></span>
 
             </section>
 
             <section ref={bestSellerRef} className={styles.best_sellers} data-scroll >
                 <div className={styles.shadow} ref={shadowRef}></div>
 
-                <h2 data-scroll style={{ fontSize: "6rem", fontWeight: "600" }}>BEST SELLERS</h2>
+                <h2 data-scroll style={{ fontWeight: "600" }}>BEST SELLERS</h2>
                 <div className={styles.best_seller_con}>
                     <div className={styles.product_con}>
                         {bestSellers.map((data, index) => {
@@ -209,14 +215,14 @@ const Home = () => {
 
                     </div>
 
-                    <Link style={{ textDecoration: "none" }} to={"/"} className={`${styles.image_con} allow_hover`} >
-                        <div className={styles.product_details}>
-                            <span>₹{bestSellers[bestSellerSelected].price}.00</span>
-                            <button>Add To Bag</button>
-                        </div>
-                        <FramerMotion width={"100%"} type={"rightToLeft"} overflowHidden={"hidden"} animateOnces={false}>
+                    <Link style={{ textDecoration: "none", display: "flex", alignItems: "center", flexDirection: "column" }} to={"/"} className={`${styles.image_con} allow_hover`} >
+                        <FramerMotion className={"height_li"} width={"100%"} type={"rightToLeft"} overflowHidden={"hidden"} animateOnces={false}>
                             <img id='best_sellers_img_con' src={bestSellers[bestSellerSelected].image} alt={bestSellers[bestSellerSelected].name} />
                         </FramerMotion>
+                        <div className={styles.product_details}>
+                            <span>₹{bestSellers[bestSellerSelected].price}.00</span>
+                            <button className="allow_hover">Add To Bag</button>
+                        </div>
                     </Link>
                 </div>
             </section>
@@ -229,7 +235,7 @@ const Home = () => {
                 <div style={{ width: "100%", marginTop: "30px" }}>
                     <FramerMotion type={"topToBottom"} width={"100%"} animateOnces={false} overflowHidden={"hidden"}> <h2 style={{ marginBottom: "0px", width: "100%" }}>Products</h2> </FramerMotion>
                     <div className={styles.products} ref={productSlider1Ref}>
-                        <Slider data={productsData} type={"products"} />
+                        <Slider data={reversedArr} type={"products"} />
                     </div>
 
                     <div className={styles.products} ref={productSlider2Ref}>
@@ -256,11 +262,42 @@ const Home = () => {
                     <div className={`${styles.frame_img} frame_img`}>
                         <img className='frame-image' src="https://stories.starbucks.com/_next/image/?url=https%3A%2F%2Fstories.starbucks.com%2Fuploads%2F2022%2F06%2FSBX20220606-Summer-Drinks-Around-the-World-FeatureHorizontal.jpg&w=3840&q=75" alt="" />
 
-                        <img className='frame-image' src="https://viable.earth/wp-content/uploads/2021/06/Whole-Carrot-Cake-3.jpg" alt="" />
+                        <img className='frame-image' src="https://img.packworld.com/files/base/pmmi/all/image/2024/01/Personal_Cup_Smallware_Beverage_Build_2.6595af9cda9de.png?auto=format%2Ccompress&fit=max&q=70&w=1200" alt="" />
 
-                        <img className='frame-image' src="https://cdn.greatdeals.com.sg/wp-content/uploads/2022/01/05163519/Starbucks-Dessert-Box-628x628.jpg" alt="" />
+                        <img className='frame-image' src="https://i.pinimg.com/736x/f3/05/10/f30510485ba4b249278ee4e80e0c8a8a.jpg" alt="" />
                     </div>
                 </div>
+            </section>
+
+            <section className={styles.features_mob} data-scroll>
+                <figure className={styles.normal}>
+                    <figcaption>
+                        <h4>We only use best and <SiCodefresh /> fresh ingredients. <IoIosArrowRoundDown className={styles.arrow} /></h4>
+                    </figcaption>
+                    <div className={styles.mob_image}>
+                        <img src="https://stories.starbucks.com/_next/image/?url=https%3A%2F%2Fstories.starbucks.com%2Fuploads%2F2022%2F06%2FSBX20220606-Summer-Drinks-Around-the-World-FeatureHorizontal.jpg&w=3840&q=75" alt="" />
+                    </div>
+                </figure>
+
+                <figure className={styles.normal}>
+                    <figcaption>
+                        <h4>Maintaining Hygien <IoFastFoodSharp /> is our top most priority. <IoIosArrowRoundDown className={styles.arrow} /></h4>
+                    </figcaption>
+                    <div className={styles.mob_image}>
+                        <img src="https://img.packworld.com/files/base/pmmi/all/image/2024/01/Personal_Cup_Smallware_Beverage_Build_2.6595af9cda9de.png?auto=format%2Ccompress&fit=max&q=70&w=1200" alt="" />
+                    </div>
+                </figure>
+
+                <figure className={styles.reverse}>
+                    <figcaption>
+                        <h4>We make every coffee <SiBuymeacoffee /> with our Heart. <AiFillHeart /></h4>
+                    </figcaption>
+                    <div className={styles.mob_image}>
+                        <img src="https://i.pinimg.com/736x/f3/05/10/f30510485ba4b249278ee4e80e0c8a8a.jpg" alt="" />
+                    </div>
+                </figure>
+
+
             </section>
 
             <section className={styles.community} ref={reviewsRef} data-scroll>

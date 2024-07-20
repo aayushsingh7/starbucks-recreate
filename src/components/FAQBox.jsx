@@ -15,8 +15,8 @@ const FAQBox = ({ question, answer }) => {
                 <h3>{question}</h3>
                 <span className={styles.icon}><AiOutlinePlus style={{ transition: ".5s ease-in-out", transform: `rotate(${isExpanded ? "134deg" : "0deg"})` }} /></span>
             </div>
-            <div style={{ height: isExpanded ? "120px" : "0px", transition: ".5s ease-in-out" }} className={`${styles.faq_answer}`}>
-                <article style={{ height: "160px" }}>
+            <div style={{ height: isExpanded ? "160px" : "0px", transition: ".5s ease-in-out" }} className={`${styles.faq_answer}`}>
+                <article style={{ height: "180px" }}>
                     {answer}
                 </article>
             </div>

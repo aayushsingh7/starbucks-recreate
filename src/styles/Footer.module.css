@@ -116,7 +116,6 @@
   border-radius: 10%;
   font-size: 50px;
   margin-right: 10px;
-
 }
 
 .icons h5 {
@@ -134,4 +133,37 @@
   font-family: "Roboto", sans-serif;
   padding: 40px;
   border-top: 2px solid #005337;
+}
+
+@media (max-width: 800px) {
+  .footer_details {
+    flex-direction: column;
+  }
+  .section_1 {
+    width: 100%;
+  }
+  .section_2 {
+    width: 100%;
+    margin-top: 40px;
+    padding: 0px;
+  }
+  .footer {
+    padding: 60px 20px 20px 20px;
+  }
+  .section_2 .options h5 {
+    font-size: 0.9rem;
+  }
+  .section_2 ul li a {
+    font-size: 0.8rem;
+  }
+  .section_1 p {
+    font-size: 0.8rem;
+    line-height: 1.3rem;
+  }
+  .section_2 .options {
+    padding: 10px;
+  }
+  .icons h5 {
+    font-size: 1rem;
+  }
 }
