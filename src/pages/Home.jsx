@@ -256,33 +256,38 @@ const Home = () => {
             </section>
 
             <section className={styles.features_mob} data-scroll>
-                <figure className={styles.normal}>
-                    <figcaption>
-                        <h4>We only use best and <SiCodefresh /> fresh ingredients. <IoIosArrowRoundDown className={styles.arrow} /></h4>
-                    </figcaption>
-                    <div className={styles.mob_image}>
-                        <img loading="lazy" src="https://stories.starbucks.com/_next/image/?url=https%3A%2F%2Fstories.starbucks.com%2Fuploads%2F2022%2F06%2FSBX20220606-Summer-Drinks-Around-the-World-FeatureHorizontal.jpg&w=3840&q=75" alt="" />
-                    </div>
-                </figure>
+                <FramerMotion overflowHidden={"hidden"} type={"leftToRight"} xAxis={200} animateOnces={false}>
+                    <figure className={styles.normal}>
+                        <figcaption>
+                            <h4>We only use best and <SiCodefresh /> fresh ingredients. <IoIosArrowRoundDown className={styles.arrow} /></h4>
+                        </figcaption>
+                        <div className={styles.mob_image}>
+                            <img loading="lazy" src="https://stories.starbucks.com/_next/image/?url=https%3A%2F%2Fstories.starbucks.com%2Fuploads%2F2022%2F06%2FSBX20220606-Summer-Drinks-Around-the-World-FeatureHorizontal.jpg&w=3840&q=75" alt="" />
+                        </div>
+                    </figure>
+                </FramerMotion>
 
-                <figure className={styles.normal}>
-                    <figcaption>
-                        <h4>Maintaining Hygien <IoFastFoodSharp /> is our top most priority. <IoIosArrowRoundDown className={styles.arrow} /></h4>
-                    </figcaption>
-                    <div className={styles.mob_image}>
-                        <img loading="lazy" src="https://img.packworld.com/files/base/pmmi/all/image/2024/01/Personal_Cup_Smallware_Beverage_Build_2.6595af9cda9de.png?auto=format%2Ccompress&fit=max&q=70&w=1200" alt="" />
-                    </div>
-                </figure>
+                <FramerMotion overflowHidden={"hidden"} type={"rightToLeft"} xAxis={200} animateOnces={false}>
+                    <figure className={styles.reverse} style={{ flexDirection: "row-reverse" }}>
+                        <figcaption>
+                            <h4>Maintaining Hygien <IoFastFoodSharp /> is our top most priority. <IoIosArrowRoundDown className={styles.arrow} /></h4>
+                        </figcaption>
+                        <div className={styles.mob_image}>
+                            <img loading="lazy" src="https://img.packworld.com/files/base/pmmi/all/image/2024/01/Personal_Cup_Smallware_Beverage_Build_2.6595af9cda9de.png?auto=format%2Ccompress&fit=max&q=70&w=1200" alt="" />
+                        </div>
+                    </figure>
+                </FramerMotion>
 
-                <figure className={styles.reverse}>
-                    <figcaption>
-                        <h4>We make every coffee <SiBuymeacoffee /> with our Heart. <AiFillHeart /></h4>
-                    </figcaption>
-                    <div className={styles.mob_image}>
-                        <img loading="lazy" src="https://i.pinimg.com/736x/f3/05/10/f30510485ba4b249278ee4e80e0c8a8a.jpg" alt="" />
-                    </div>
-                </figure>
-
+                <FramerMotion overflowHidden={"hidden"} type={"leftToRight"} xAxis={200} animateOnces={false}>
+                    <figure className={styles.normal}>
+                        <figcaption>
+                            <h4>We make every coffee <SiBuymeacoffee /> with our Heart. <AiFillHeart /></h4>
+                        </figcaption>
+                        <div className={styles.mob_image}>
+                            <img loading="lazy" src="https://i.pinimg.com/736x/f3/05/10/f30510485ba4b249278ee4e80e0c8a8a.jpg" alt="" />
+                        </div>
+                    </figure>
+                </FramerMotion>
 
             </section>
 

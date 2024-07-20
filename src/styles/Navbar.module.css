@@ -103,6 +103,7 @@
   font-size: 0.8rem;
   font-family: "Roboto", sans-serif;
   font-weight: 600;
+  cursor: pointer;
 }
 
 .mob_links li a:hover {
@@ -114,6 +115,9 @@
   color: var(--primary-color);
   font-size: 30px;
   gap: 20px;
+}
+.mob_options svg {
+  cursor: pointer;
 }
 
 @media (max-width: 1150px) {

@@ -199,22 +199,16 @@ section {
 
 @media (max-width: 1150px) {
   :root {
-    font-size: 18px;
+    font-size: 19px;
   }
 }
 
 @media (max-width: 850px) {
   :root {
-    font-size: 16px;
+    font-size: 17px;
   }
   .cursor {
     display: none !important;
   }
 }
 
-/* 
-@media (max-width: 1350px) {
-  .height_li {
-    height: 90% !important;
-  }
-} */

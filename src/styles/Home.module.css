@@ -801,7 +801,7 @@
     overflow: hidden;
   }
   .features_mob figure {
-    flex-direction: column-reverse;
+    flex-direction: column-reverse !important;
   }
   .features_mob figure .mob_image {
     width: 100%;
