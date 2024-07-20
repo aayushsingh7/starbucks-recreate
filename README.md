@@ -46,7 +46,7 @@ npm run dev
 
 - Open your browser and navigate to the link given on termial to view the application.
 
-![Alt Text](https://res.cloudinary.com/dvk80x6fi/image/upload/v1721482571/Screenshot_848_nhdrov.png)
+![Alt Text](https://res.cloudinary.com/dvk80x6fi/image/upload/v1721484744/Screenshot_849_njg6zp.png)
 <br>
 
 ## Features

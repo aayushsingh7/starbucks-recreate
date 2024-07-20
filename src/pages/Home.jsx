@@ -93,8 +93,7 @@ const Home = () => {
                     start: "top 80%",
                     end: "top 20%",
                     animation: animation3,
-                    scrub: true,
-                    markers: false
+                    scrub: true
                 })
             })
 
@@ -103,7 +102,6 @@ const Home = () => {
                 trigger: productsSectionRef.current,
                 start: 'top top',
                 end: 'center 80%',
-                markers: true,
                 scrub: true,
                 animation: animation1,
             });
@@ -112,7 +110,6 @@ const Home = () => {
                 trigger: productsSectionRef.current,
                 start: 'top top',
                 end: 'center 0%',
-                markers: true,
                 scrub: true,
                 animation: animation2,
             });
@@ -121,7 +118,6 @@ const Home = () => {
                 trigger: productsSectionRef.current,
                 start: 'top center',
                 end: 'top top',
-                markers: true,
                 scrub: true,
                 animation: animation3,
             });
@@ -131,8 +127,7 @@ const Home = () => {
                 start: "top top",
                 end: "bottom bottom",
                 pin: frameRef.current,
-                scrub: true,
-                markers: true,
+                scrub: true
             })
 
             ScrollTrigger.create({
@@ -142,9 +137,7 @@ const Home = () => {
                 endTrigger: productsSectionRef.current,
                 pin: true,
                 pinSpacing: false,
-                markers: true,
-                scrub: true,
-
+                scrub: true
             });
 
             ScrollTrigger.create({
