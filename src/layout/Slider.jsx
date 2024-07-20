@@ -45,7 +45,7 @@ const Slider = ({ data, type }) => {
                     <Link className={`${homeStyles.product_box} allow_hover`} to={"/"} style={{ textDecoration: "none" }}>
                         <figure>
                             <div className={homeStyles.product_image}>
-                                <img src="https://starbucksstatic.cognizantorderserv.com/Category/Small/Drinks.jpg" alt="" />
+                                <img loading="lazy" src="https://starbucksstatic.cognizantorderserv.com/Category/Small/Drinks.jpg" alt="" />
                             </div>
                             <figcaption>
                                 <h4>Drinks</h4>
@@ -54,7 +54,7 @@ const Slider = ({ data, type }) => {
                     <Link className={`${homeStyles.product_box} allow_hover`} to={"/"} style={{ textDecoration: "none" }}>
                         <figure >
                             <div className={homeStyles.product_image}>
-                                <img src="https://starbucksstatic.cognizantorderserv.com/Category/Small/Food.jpg" alt="" />
+                                <img loading="lazy" src="https://starbucksstatic.cognizantorderserv.com/Category/Small/Food.jpg" alt="" />
                             </div>
                             <figcaption>
                                 <h4>Foods</h4>
@@ -63,7 +63,7 @@ const Slider = ({ data, type }) => {
                     <Link className={`${homeStyles.product_box} allow_hover`} to={"/"} style={{ textDecoration: "none" }}>
                         <figure >
                             <div className={homeStyles.product_image}>
-                                <img src="https://starbucksstatic.cognizantorderserv.com/Category/Small/Merchandise.jpg" alt="" />
+                                <img loading="lazy" src="https://starbucksstatic.cognizantorderserv.com/Category/Small/Merchandise.jpg" alt="" />
                             </div>
                             <figcaption>
                                 <h4>Merchandise</h4>
@@ -72,7 +72,7 @@ const Slider = ({ data, type }) => {
                     <Link className={`${homeStyles.product_box} allow_hover`} to={"/"} style={{ textDecoration: "none" }}>
                         <figure>
                             <div className={homeStyles.product_image}>
-                                <img src="https://starbucksstatic.cognizantorderserv.com/Category/Small/CoffeeAtHome.jpg" alt="" />
+                                <img loading="lazy" src="https://starbucksstatic.cognizantorderserv.com/Category/Small/CoffeeAtHome.jpg" alt="" />
                             </div>
                             <figcaption>
                                 <h4>Coffee At Home</h4>
@@ -81,7 +81,7 @@ const Slider = ({ data, type }) => {
                     <Link className={`${homeStyles.product_box} allow_hover`} to={"/"} style={{ textDecoration: "none" }}>
                         <figure >
                             <div className={homeStyles.product_image}>
-                                <img src="https://starbucksstatic.cognizantorderserv.com/Category/Small/ReadyToEat.jpg" alt="" />
+                                <img loading="lazy" src="https://starbucksstatic.cognizantorderserv.com/Category/Small/ReadyToEat.jpg" alt="" />
                             </div>
                             <figcaption>
                                 <h4>Ready to Eat</h4>

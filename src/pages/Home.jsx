@@ -176,28 +176,21 @@ const Home = () => {
                 </h1>
                 <div className={styles.image_bg}>
                     <div data-scroll data-scroll-speed="1.5" className={styles.div}>
-                        <img className={styles.img_1} src="https://res.cloudinary.com/dvk80x6fi/image/upload/v1720959889/image_transparent_Craiyon_7_zpbwaf.png" alt="Image 1" />
+                        <img loading="eager" className={styles.img_1} src="https://res.cloudinary.com/dvk80x6fi/image/upload/v1720959889/image_transparent_Craiyon_7_zpbwaf.png" alt="Image 1" />
                     </div>
                     <div data-scroll data-scroll-speed="1.9" className={styles.div}>
-                        <img className={styles.img_2} src="https://res.cloudinary.com/dvk80x6fi/image/upload/v1720958233/image_transparent_Craiyon_5_orvr2p.png" alt="Image 2" />
+                        <img loading="eager" className={styles.img_2} src="https://res.cloudinary.com/dvk80x6fi/image/upload/v1720958233/image_transparent_Craiyon_5_orvr2p.png" alt="Image 2" />
                     </div>
                     <div data-scroll data-scroll-speed="2.5" className={styles.div}>
-                        <img className={styles.img_3} src="https://res.cloudinary.com/dvk80x6fi/image/upload/v1720329633/cup-1_transparent_Craiyon_oddwqr.png" alt="Image 3" />
+                        <img loading="eager" className={styles.img_3} src="https://res.cloudinary.com/dvk80x6fi/image/upload/v1720329633/cup-1_transparent_Craiyon_oddwqr.png" alt="Image 3" />
                     </div>
                     <div data-scroll data-scroll-speed="1.9" className={styles.div}>
-                        <img className={styles.img_4} src="https://res.cloudinary.com/dvk80x6fi/image/upload/v1720958351/image_transparent_Craiyon_4_frmtvj.png" alt="Image 4" />
+                        <img loading="eager" className={styles.img_4} src="https://res.cloudinary.com/dvk80x6fi/image/upload/v1720958351/image_transparent_Craiyon_4_frmtvj.png" alt="Image 4" />
                     </div>
                     <div data-scroll data-scroll-speed="1.5" className={styles.div}>
-                        <img className={styles.img_5} src="https://res.cloudinary.com/dvk80x6fi/image/upload/v1720959889/image_transparent_Craiyon_7_zpbwaf.png" alt="Image 5" />
+                        <img loading="eager" className={styles.img_5} src="https://res.cloudinary.com/dvk80x6fi/image/upload/v1720959889/image_transparent_Craiyon_7_zpbwaf.png" alt="Image 5" />
                     </div>
                 </div>
-
-                {/* 
-                <div data-scroll data-scroll-speed="-0.1" className={styles.more_details}>
-                    <h2>FREASHNES ON EVERY SHIP</h2>
-                    <button>Shop Now</button>
-                    </div> */}
-
 
                 <span className={styles.indicator_arrow} data-scroll data-scroll-speed="-0.1"><IoIosArrowRoundDown /></span>
 
@@ -217,7 +210,7 @@ const Home = () => {
 
                     <Link style={{ textDecoration: "none", display: "flex", alignItems: "center", flexDirection: "column" }} to={"/"} className={`${styles.image_con} allow_hover`} >
                         <FramerMotion className={"height_li"} width={"100%"} type={"rightToLeft"} overflowHidden={"hidden"} animateOnces={false}>
-                            <img id='best_sellers_img_con' src={bestSellers[bestSellerSelected].image} alt={bestSellers[bestSellerSelected].name} />
+                            <img loading="eager" id='best_sellers_img_con' src={bestSellers[bestSellerSelected].image} alt={bestSellers[bestSellerSelected].name} />
                         </FramerMotion>
                         <div className={styles.product_details}>
                             <span>₹{bestSellers[bestSellerSelected].price}.00</span>
@@ -260,11 +253,11 @@ const Home = () => {
                 </div>
                 <div className={styles.frame} ref={frameRef}>
                     <div className={`${styles.frame_img} frame_img`}>
-                        <img className='frame-image' src="https://stories.starbucks.com/_next/image/?url=https%3A%2F%2Fstories.starbucks.com%2Fuploads%2F2022%2F06%2FSBX20220606-Summer-Drinks-Around-the-World-FeatureHorizontal.jpg&w=3840&q=75" alt="" />
+                        <img loading="lazy" className='frame-image' src="https://stories.starbucks.com/_next/image/?url=https%3A%2F%2Fstories.starbucks.com%2Fuploads%2F2022%2F06%2FSBX20220606-Summer-Drinks-Around-the-World-FeatureHorizontal.jpg&w=3840&q=75" alt="" />
 
-                        <img className='frame-image' src="https://img.packworld.com/files/base/pmmi/all/image/2024/01/Personal_Cup_Smallware_Beverage_Build_2.6595af9cda9de.png?auto=format%2Ccompress&fit=max&q=70&w=1200" alt="" />
+                        <img loading="lazy" className='frame-image' src="https://img.packworld.com/files/base/pmmi/all/image/2024/01/Personal_Cup_Smallware_Beverage_Build_2.6595af9cda9de.png?auto=format%2Ccompress&fit=max&q=70&w=1200" alt="" />
 
-                        <img className='frame-image' src="https://i.pinimg.com/736x/f3/05/10/f30510485ba4b249278ee4e80e0c8a8a.jpg" alt="" />
+                        <img loading="lazy" className='frame-image' src="https://i.pinimg.com/736x/f3/05/10/f30510485ba4b249278ee4e80e0c8a8a.jpg" alt="" />
                     </div>
                 </div>
             </section>
@@ -275,7 +268,7 @@ const Home = () => {
                         <h4>We only use best and <SiCodefresh /> fresh ingredients. <IoIosArrowRoundDown className={styles.arrow} /></h4>
                     </figcaption>
                     <div className={styles.mob_image}>
-                        <img src="https://stories.starbucks.com/_next/image/?url=https%3A%2F%2Fstories.starbucks.com%2Fuploads%2F2022%2F06%2FSBX20220606-Summer-Drinks-Around-the-World-FeatureHorizontal.jpg&w=3840&q=75" alt="" />
+                        <img loading="lazy" src="https://stories.starbucks.com/_next/image/?url=https%3A%2F%2Fstories.starbucks.com%2Fuploads%2F2022%2F06%2FSBX20220606-Summer-Drinks-Around-the-World-FeatureHorizontal.jpg&w=3840&q=75" alt="" />
                     </div>
                 </figure>
 
@@ -284,7 +277,7 @@ const Home = () => {
                         <h4>Maintaining Hygien <IoFastFoodSharp /> is our top most priority. <IoIosArrowRoundDown className={styles.arrow} /></h4>
                     </figcaption>
                     <div className={styles.mob_image}>
-                        <img src="https://img.packworld.com/files/base/pmmi/all/image/2024/01/Personal_Cup_Smallware_Beverage_Build_2.6595af9cda9de.png?auto=format%2Ccompress&fit=max&q=70&w=1200" alt="" />
+                        <img loading="lazy" src="https://img.packworld.com/files/base/pmmi/all/image/2024/01/Personal_Cup_Smallware_Beverage_Build_2.6595af9cda9de.png?auto=format%2Ccompress&fit=max&q=70&w=1200" alt="" />
                     </div>
                 </figure>
 
@@ -293,7 +286,7 @@ const Home = () => {
                         <h4>We make every coffee <SiBuymeacoffee /> with our Heart. <AiFillHeart /></h4>
                     </figcaption>
                     <div className={styles.mob_image}>
-                        <img src="https://i.pinimg.com/736x/f3/05/10/f30510485ba4b249278ee4e80e0c8a8a.jpg" alt="" />
+                        <img loading="lazy" src="https://i.pinimg.com/736x/f3/05/10/f30510485ba4b249278ee4e80e0c8a8a.jpg" alt="" />
                     </div>
                 </figure>
 

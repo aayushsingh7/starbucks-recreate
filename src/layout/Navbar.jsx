@@ -14,7 +14,7 @@ const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [isStoreLocatorOpen, setIsStoreLocatorOpen] = useState(false);
 
-  
+
 
     const toggleStoreLocator = () => {
         setIsStoreLocatorOpen(!isStoreLocatorOpen);
@@ -27,13 +27,13 @@ const Navbar = () => {
 
                 <div className={`${styles.navbar_content_container} ${isMenuOpen ? styles.open : ''}`}>
                     <div className={styles.branding_items}>
-                        <a href="#">Menu</a>
-                        <a href="#">Rewards</a>
-                        <a href="#">Gift Cards</a>
+                        <Link to="/">Menu</Link>
+                        <Link to="/">Rewards</Link>
+                        <Link to="/">Gift Cards</Link>
                     </div>
 
                     <div className={styles.user_items}>
-                        <a href="#" onClick={toggleStoreLocator}><FaLocationDot /> Find a Store</a>
+                        <Link to="/" onClick={toggleStoreLocator}><FaLocationDot /> Find a Store</Link>
                         <button className={styles.signIn}>Sign In</button>
                         <button>Join Now</button>
                     </div>
