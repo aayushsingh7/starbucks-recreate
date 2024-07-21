@@ -11,6 +11,7 @@ const InfiniteScroll = ({ direction, data }) => {
                 {data.map((da) => {
                     return (
                         <li
+                            key={da.image}
                             style={{ backgroundImage: `url(${da.image})` }}
                             className='infinite_slider_box'>
                         </li>
@@ -22,6 +23,7 @@ const InfiniteScroll = ({ direction, data }) => {
                 {data.map((da) => {
                     return (
                         <li
+                            key={da.image}
                             style={{ backgroundImage: `url(${da.image})` }}
                             className='infinite_slider_box'>
                         </li>

@@ -24,7 +24,6 @@ import Slider from '../layout/Slider';
 const Home = () => {
 
     const reversedArr = [...productsData]?.reverse()
-    console.log(reversedArr)
     const scrollRef = useRef(null);
     const bestSellerRef = useRef(null)
     const productsSectionRef = useRef(null)
@@ -168,10 +167,10 @@ const Home = () => {
     return (
         <div className={styles.container} ref={scrollRef} data-scroll-container>
             <section className={styles.hero_section} onMouseDown={(e) => e.preventDefault()} data-scroll >
-                
+
                 <h1 data-scroll data-scroll-speed={windowWidth > 700 ? "1" : "0.4"} >
                     <span>It's not just coffee. It's</span>
-                    <span className={styles.main}>Starbucks {windowWidth > 600 ? "" : "LAUDA"}</span>
+                    <span className={styles.main}>Starbucks</span>
                 </h1>
 
                 <div className={styles.image_bg}>
@@ -204,7 +203,7 @@ const Home = () => {
                 <div className={styles.best_seller_con}>
                     <div className={styles.product_con}>
                         {bestSellers.map((data, index) => {
-                            return <FramerMotion type={"leftToRight"} overflowHidden={"hidden"} animateOnces={false}><h3 className={bestSellerSelected === index && styles.active} onClick={() => setBestSellerSelected(index)} >{data.name}</h3></FramerMotion>
+                            return <FramerMotion key={data.name} type={"leftToRight"} overflowHidden={"hidden"} animateOnces={false}><h3 className={bestSellerSelected === index && styles.active} onClick={() => setBestSellerSelected(index)} >{data.name}</h3></FramerMotion>
                         })}
 
                     </div>
@@ -310,7 +309,7 @@ const Home = () => {
                 <h2>Frequently Asked <span style={{ background: "var(--highlight-color)", padding: "0px 10px" }}>Question</span></h2>
                 <div className={styles.faqs}>
                     {faqData.map((item, index) => (
-                        <FramerMotion overflowHidden={"none"} xAxis={200} type={index % 2 === 0 ? "leftToRight" : "rightToLeft"} animateOnces={false}><FAQBox key={index} question={item.question} answer={item.answer} /></FramerMotion>
+                        <FramerMotion key={item.question} overflowHidden={"none"} xAxis={200} type={index % 2 === 0 ? "leftToRight" : "rightToLeft"} animateOnces={false}><FAQBox key={index} question={item.question} answer={item.answer} /></FramerMotion>
                     ))}
                 </div>
             </section>

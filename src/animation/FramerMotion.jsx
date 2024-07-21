@@ -13,7 +13,7 @@ const FramerMotion = ({
     xAxis = 75,
     animateOnces = true,
     duration = 0.5,
-    className,
+    className = "false",
     ...styling
 }) => {
     const [ref, inView] = useInView({
@@ -29,7 +29,6 @@ const FramerMotion = ({
         } else if (!animateOnces) {
             mainControls.start("hidden");
         }
-        console.log("visible", animateOnces);
     }, [inView, mainControls, animateOnces]);
 
     const topToBottom = {
@@ -82,7 +81,7 @@ const FramerMotion = ({
             }}
         >
             <motion.div
-                className={className }
+                className={className}
                 variants={variants}
                 initial="hidden"
                 animate={mainControls}

@@ -32,14 +32,12 @@ const Slider = ({ data, type }) => {
     }
 
 
-    console.log(data)
-
 
     return (
         // <div className="slider_container">
         <div className="slide" ref={sliderRef} onMouseDown={onMouseDown} onMouseUp={onMouseUp} onMouseMove={onMouseMove}>
             {type == "products" ? data.map((da) => {
-                return <ProductBox data={da} />
+                return <ProductBox key={`${Math.random() * 1000000 + da.id}`} data={da} />
             }) :
                 <>
                     <Link className={`${homeStyles.product_box} allow_hover`} to={"/"} style={{ textDecoration: "none" }}>

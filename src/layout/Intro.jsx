@@ -18,9 +18,9 @@ const Intro = () => {
 
 
     return (
-        <div onKeyDown={(e) => e.preventDefault()} className={`${styles.intro_container} ${hide && styles.hide}`}>
+        <div onKeyDown={(e) => e.preventDefault()} className={`${styles.intro_container} ${hide ? styles.hide : ""}`}>
             <div className={styles.logo_div}>
-                <img className={shrinkImage && styles.animation} src="./starbucks-intro.png" loading="eager" alt="" />
+                <img className={shrinkImage ? styles.animation : ""} src="./starbucks-intro.png" loading="eager" alt="" />
             </div>
             <div className={styles.intro_text}>
                 <FramerMotion delay={2} type={"topToBottom"} overflowHidden={"hidden"} animateOnces={true}>
