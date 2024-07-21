@@ -157,9 +157,14 @@ const Home = () => {
 
 
     useEffect(() => {
-        window.addEventListener("resize", () => window.location.reload());
+        function handleResize() {
+            if (window.innerWidth !== windowWidth) {
+                window.location.reload()
+            }
+        }
+        window.addEventListener("resize", handleResize());
         return () => {
-            window.removeEventListener("resize", () => window.location.reload());
+            window.removeEventListener("resize", handleResize());
         };
     }, []);
 

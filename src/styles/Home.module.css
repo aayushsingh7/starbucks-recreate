@@ -794,4 +794,7 @@
   .features_mob figure figcaption h4 svg {
     margin-bottom: -5px;
   }
+  .image_bg{
+    top:50%
+  }
 }
