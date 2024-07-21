@@ -36,6 +36,7 @@ const Home = () => {
     const reviewsRef = useRef(null)
     const categoriesRef = useRef(null)
     const [bestSellerSelected, setBestSellerSelected] = useState(0)
+    const [windowWidth, setWindowWidth] = useState(window.innerWidth)
 
 
     useEffect(() => {
@@ -156,34 +157,41 @@ const Home = () => {
     }, [])
 
 
-
-
+    useEffect(() => {
+        window.addEventListener("resize", () => window.location.reload());
+        return () => {
+            window.removeEventListener("resize", () => window.location.reload());
+        };
+    }, []);
 
 
     return (
         <div className={styles.container} ref={scrollRef} data-scroll-container>
             <section className={styles.hero_section} onMouseDown={(e) => e.preventDefault()} data-scroll >
-                <h1 data-scroll data-scroll-speed="1">
+                
+                <h1 data-scroll data-scroll-speed={windowWidth > 700 ? "1" : "0.4"} >
                     <span>It's not just coffee. It's</span>
-                    <span className={styles.main}>Starbucks</span>
+                    <span className={styles.main}>Starbucks {windowWidth > 600 ? "" : "LAUDA"}</span>
                 </h1>
+
                 <div className={styles.image_bg}>
-                    <div data-scroll data-scroll-speed="1.5" className={styles.div}>
+                    <div data-scroll data-scroll-speed={windowWidth > 700 ? "1.5" : "0.8"} className={styles.div}>
                         <img loading="eager" className={styles.img_1} src="https://res.cloudinary.com/dvk80x6fi/image/upload/v1720959889/image_transparent_Craiyon_7_zpbwaf.png" alt="Image 1" />
                     </div>
-                    <div data-scroll data-scroll-speed="1.9" className={styles.div}>
+                    <div data-scroll data-scroll-speed={windowWidth > 700 ? "1.9" : "1.1"} className={styles.div}>
                         <img loading="eager" className={styles.img_2} src="https://res.cloudinary.com/dvk80x6fi/image/upload/v1720958233/image_transparent_Craiyon_5_orvr2p.png" alt="Image 2" />
                     </div>
-                    <div data-scroll data-scroll-speed="2.5" className={styles.div}>
+                    <div data-scroll data-scroll-speed={windowWidth > 700 ? "2.5" : "1.3"} className={styles.div}>
                         <img loading="eager" className={styles.img_3} src="https://res.cloudinary.com/dvk80x6fi/image/upload/v1720329633/cup-1_transparent_Craiyon_oddwqr.png" alt="Image 3" />
                     </div>
-                    <div data-scroll data-scroll-speed="1.9" className={styles.div}>
+                    <div data-scroll data-scroll-speed={windowWidth > 700 ? "1.9" : "1.1"} className={styles.div}>
                         <img loading="eager" className={styles.img_4} src="https://res.cloudinary.com/dvk80x6fi/image/upload/v1720958351/image_transparent_Craiyon_4_frmtvj.png" alt="Image 4" />
                     </div>
-                    <div data-scroll data-scroll-speed="1.5" className={styles.div}>
+                    <div data-scroll data-scroll-speed={windowWidth > 700 ? "1.5" : "0.8"} className={styles.div}>
                         <img loading="eager" className={styles.img_5} src="https://res.cloudinary.com/dvk80x6fi/image/upload/v1720959889/image_transparent_Craiyon_7_zpbwaf.png" alt="Image 5" />
                     </div>
                 </div>
+
 
                 <span className={styles.indicator_arrow} data-scroll data-scroll-speed="-0.1"><IoIosArrowRoundDown /></span>
 
@@ -260,7 +268,7 @@ const Home = () => {
                     <figure className={styles.normal}>
                         <figcaption>
                             <h4>We only use best and <SiCodefresh /> fresh ingredients. <IoIosArrowRoundDown className={styles.arrow} /></h4>
-                        </figcaption>
+                        </figcaption>h
                         <div className={styles.mob_image}>
                             <img loading="lazy" src="./features-1.webp" alt="" />
                         </div>
