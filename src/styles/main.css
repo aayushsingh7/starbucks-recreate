@@ -39,7 +39,6 @@ a:active {
 }
 
 body {
-  /* overflow-x: hidden; */
   position: relative;
   background: var(--primary-background);
   overflow-y: scroll;
@@ -211,4 +210,3 @@ section {
     display: none !important;
   }
 }
-
