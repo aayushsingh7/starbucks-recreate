@@ -23,13 +23,13 @@ To get started with the project, follow these steps:
 - Clone the repository:
 
 ```bash
- git clone https://github.com/aayushsingh7/grandmasters-ReimagineRound2.git
+ git clone https://github.com/aayushsingh7/starbucks-recreate.git
 ```
 
 - Navigate to the project directory:
 
 ```bash
- cd grandmasters-ReimagineRound2
+ cd starbucks-recreate
 ```
 
 - Install dependencies using npm:
